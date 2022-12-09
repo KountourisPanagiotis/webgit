@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tests</title>
+    <link rel="stylesheet" href="../chapter1/css/tests.css">
+</head>
+<body>
+    <table>
+        <td>spaltenweise</td>
+        <td>
+            <table>
+                <td colspan="4">A04_03a</td>
+                <tr>
+                    <td>Spale 1</td>
+                    <td>Spalte 2</td>
+                    <td>Spalte 3</td>
+                    <td>Spalte 4</td>
+                </tr>
+                <tr>
+                    <td colspan="4">Spalte 1+2+3+4</td>
+                </tr>
+            </table>
+        </td>
+        <td>
+            <table>
+                <td colspan="4">A04_03b</td>
+                <tr>
+                    <td>Spale 1</td>
+                    <td>Spalte 2</td>
+                    <td>Spalte 3</td>
+                    <td>Spalte 4</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Spalte 1+2</td>
+                    <td colspan="2">Spalte 3+4</td>
+                </tr>
+            </table>
+        </td> 
+        <td>
+            <table>
+                <td colspan="4">A04_03c</td>
+                <tr>
+                    <td>Spalte 1</td>
+                    <td>Spalte 2</td>
+                    <td>Spalte 3</td>
+                    <td>Spalte 4</td>
+                </tr>
+                <tr>
+                    <td colspan="1">Spalte 1</td>
+                    <td colspan="3">Spalte 2+3+4</td>
+                </tr>
+            </table>
+        </td>
+        <tr>
+            <td>zeilenweise</td>
+            <td>
+                <table>
+                    <tr colspan="3">A04_03d</tr>
+                    <tr>
+                        <td>Zeile 1</td>
+                        <td rowspan="4">Zeile 1+2+3+4</td>
+                    </tr>
+                    <tr>
+                        <td>Zeile 2</td>
+                    </tr>
+                    <tr>
+                        <td>Zeile 3</td>
+                    </tr>
+                    <tr>
+                        <td>Zeile 4</td>
+                    </tr>  
+                </table>
+            </td>
+            <td>
+                <table>
+                    <tr colspan="3">A04_03e</tr>
+                    <tr>
+                        <td>Zeile 1</td>
+                        <td rowspan="2">Zeile 2+3</td>
+                    </tr>
+                    <tr>
+                        <td>Zeile 2</td>
+                    </tr>
+                    <tr colspan="3"></tr>
+                    <tr>
+                        <td>Zeile 3</td>
+                        <td rowspan="2">Zeile 2+3</td>
+                    </tr>
+                    <tr>
+                        <td>Zeile 4</td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <table>
+                    <tr colspan="3">A04_03f</tr>
+                    <tr>
+                        <td>Zeile 1</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>Zeile 1</td>
+                        <td rowspan="3">Zeile 2+3+4</td>
+                    </tr>
+                    <tr>
+                        <td>Zeile 3</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>Zeile 4</td>   
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
